@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 
 #Comment Test
-TOKEN = "NzUxNjU0ODYxMDQ0NDQ5Mzk0.X1MPIw.2v1sFcR-_SYuCMFLv4VoswLIbKk"
+TOKEN = ""
 client = commands.Bot(command_prefix = '.')
 channel_id = 751691937077133385
 
