@@ -3,8 +3,8 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
 
-
-TOKEN = "NzUxNjU0ODYxMDQ0NDQ5Mzk0.X1MPIw.M3b3AOodAgh4XNKz7_nQrM9bV-E"
+#Comment Test
+TOKEN = "NzUxNjU0ODYxMDQ0NDQ5Mzk0.X1MPIw.2v1sFcR-_SYuCMFLv4VoswLIbKk"
 client = commands.Bot(command_prefix = '.')
 channel_id = 751691937077133385
 
@@ -36,7 +36,7 @@ async def on_voice_state_update(member, before, after):
         members = channel.members
         member_names = '\n'.join([x.name for x in members])
 
-        await channel.send(f'@everyone {member_names} has joined')
+        await channel.send(f'@everyone')
 
 
     elif before.channel is not None and after.channel is None:
