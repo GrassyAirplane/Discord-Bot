@@ -44,8 +44,6 @@ async def on_voice_state_update(member, before, after):
         print("member left Vc")
         await channel.purge(limit = 10, check = lambda m: m.author == client.user)
 
-    
-
 
 @client.command()
 async def repeat(ctx, x):
@@ -59,7 +57,10 @@ async def ping(ctx):
 async def clear(ctx, amount=5):
     await ctx.channel.purge(limit=amount)   
 
-
+@client.command
+async def name(ctx, message):
+    await ctx.send(message.author.id)
+    
 
 client.run(TOKEN)
 
